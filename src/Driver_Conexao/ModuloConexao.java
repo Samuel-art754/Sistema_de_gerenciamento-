@@ -17,13 +17,9 @@ import javax.swing.JOptionPane;
  */
 public class ModuloConexao {
      
-    //private String hostname;
-    //private int port;
-    //private String database;
-    //private String username;
-    //private String password;
-    
-    //private Connection conexao;
+    PreparedStatement pst = null;
+    Connection conexao = null;
+    ResultSet rs = null;
     
     public static Connection conector(){
         java.sql.Connection conexao = null;
